@@ -185,3 +185,33 @@ section h2 {
     transform: scale(1.1);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
+
+.contactcontainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.contactlinks {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px;
+    margin-right: 80px;
+    text-align: center;
+}
+
+.contactlinks strong {
+    font-size: 120%;
+    color: var(--orange);
+}
+
+.link {
+    margin-right: 100px;
+    text-align: center;
+}
+
+.link a {
+    text-decoration: none;
+    color: var(--yellow);
+}
+
