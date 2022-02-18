@@ -39,6 +39,7 @@ header h1 {
     justify-content: flex-start;
     font-size: 28px;
     color: var(--yellow);
+    width: 100%;
 }
 
 header a {
@@ -99,7 +100,6 @@ header nav ul li a {
     font-size: 120%;
     color: var(--yellow);
     text-align: center;
-    border-bottom: 5px solid var(--blue);
 }
 
 section h2 {
@@ -110,7 +110,14 @@ section h2 {
 .featured {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding-top: 35px;
+    padding-right: 15px;
+    padding-bottom: 35px;
+    padding-left: 15px;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    border-bottom: 5px solid var(--blue);
+    border-top: 5px solid var(--blue);
 }
 
 .cardmain {
@@ -124,6 +131,11 @@ section h2 {
     text-align: center;
     transition: .5s ease;
     cursor: pointer;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
 }
 
 .card {
@@ -189,7 +201,7 @@ section h2 {
 .contactcontainer {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding-left: 15px;
 }
 
 .contactlinks {
@@ -215,3 +227,83 @@ section h2 {
     color: var(--yellow);
 }
 
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-right: 480px
+      }
+    
+      header h1 {
+        width: 20%;
+        text-align: center;
+        font-size: 75%;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      header nav ul li a {
+        font-size: 15px;
+      }
+
+      section .about {
+          width: 40%;
+          justify-content: center;
+          text-align: center;
+      }
+
+      .featured {
+          flex-direction: column;
+          margin-right: 550px;
+          
+
+      }
+
+      .cardmain {
+        display: grid;
+        font-size: 15px;
+        flex: 0 70%;
+      }
+
+      .card-text {
+        grid-area: text;
+        margin: 25px;
+    }
+    
+    .card-text .date {
+        color: var(--orange);
+        font-size: 10px;
+    }
+    
+    .card-text p {
+        color: var(--black);
+        font-size: 15px;
+        font-weight: 250;
+    }
+    
+    .card-text h2 {
+        margin-top: 0px;
+        font-size: 20px;
+    }
+
+    .contactcontainer {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contactlinks {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-right: 450px;
+    }
+
+    .link {
+        margin-top: 20px;
+    }
+}
