@@ -16,7 +16,7 @@ body {
     background-color: var(--black);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
-
+/* HEADER AND NAV BAR STYLE START */
 header {
     padding: 20px 35px;
     background-color: var(--black);
@@ -72,7 +72,9 @@ header nav ul li a {
     display: flex;
     align-items: center;
 }
+/* HEADER AND NAV BAR STYLE END */
 
+/* ABOUT SECTION STYLE START */
 .about {
     padding: 15px;
     display: flex;
@@ -106,7 +108,9 @@ section h2 {
     margin-left: 10px;
     color: var(--yellow);
 }
+/* ABOUT SECTION STYLE END */
 
+/* WORK SECTION STYLE START */
 .featured {
     display: flex;
     justify-content: space-between;
@@ -197,7 +201,9 @@ a {
     transform: scale(1.1);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
+/* WORK SECTION STYLE END */
 
+/* CONTACT SECTION STYLE START */
 .contactcontainer {
     display: flex;
     justify-content: space-between;
@@ -226,7 +232,9 @@ a {
     text-decoration: none;
     color: var(--yellow);
 }
+/* CONTACT SECTION STYLE END */
 
+/* MEDIA QUERY STYLE START */
 @media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;
@@ -307,3 +315,4 @@ a {
         margin-top: 20px;
     }
 }
+/* MEDIA QUERY STYLE END */
