@@ -144,7 +144,7 @@ a {
 
 .card {
     display: grid;
-    grid-template-columns: 260px;
+    grid-template-columns: 300px;
     grid-template-rows: 210px 210px;
     grid-template-areas: "image" "text";
     border-radius: 18px;
@@ -164,6 +164,14 @@ a {
 }
 
 .card-image2 {
+    grid-area: image;
+    background-image: url(../images/chooseyourmoodproject.png);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: cover;
+}
+
+.card-image3 {
     grid-area: image;
     background-image: url(../images/blurred.jpg);
     border-top-left-radius: 10px;
