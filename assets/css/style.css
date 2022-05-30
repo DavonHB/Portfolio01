@@ -173,7 +173,7 @@ a {
 
 .card-image3 {
     grid-area: image;
-    background-image: url(../images/blurred.jpg);
+    background-image: url(../images/codewire);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-size: cover;
